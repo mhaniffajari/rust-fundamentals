@@ -22,6 +22,8 @@
         "./examples/17-data-structures/Cargo.toml",
         "/workspaces/rust-fundamentals/exercise/conditional-loops/conditional-loops/Cargo.toml",
         "/workspaces/rust-fundamentals/exercise/shadowing/Cargo.toml",
-        "/workspaces/rust-fundamentals/exercise/for-the-loop/Cargo.toml"
+        "/workspaces/rust-fundamentals/exercise/for-the-loop/Cargo.toml",
+        "/workspaces/rust-fundamentals/exercise/for-the-loop-break/Cargo.toml",
+        "/workspaces/rust-fundamentals/exercise/contorl-flow/Cargo.toml"
     ]
 }
