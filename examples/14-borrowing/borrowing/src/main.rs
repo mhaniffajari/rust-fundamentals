@@ -1,6 +1,7 @@
 fn own_vec(mut vector: Vec<i32>) {
-    vector.push(10);
-    println!("{:?}", vector);
+    let mut new_vector = Vec::new();
+    new_vector.push(10);
+    new_vector
 }
 
 fn own_integer(x: i32) {
@@ -22,13 +23,14 @@ fn main() {
 
     // this compiles no problem!
     own_integer(my_int);
-    println!("{}", my_int);
+    // println!("{}", my_int);
 
     own_string(my_string); // take ownership of my_string
     // this is using my_string which has also moved and is invalid
     //println!("{:?}", my_string); // this will not compile!
 
-    own_vec(my_vec);
+    let new_vector = own_vec(my_vec);
+    println!("{:?}", new_vector);
     // but this is using my_vec which was borrowed (moved) and yet is now invalid
     //println!("{:?}", my_vec); // this will not compile!
 }
